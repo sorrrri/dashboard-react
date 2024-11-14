@@ -1,101 +1,210 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="container">
+        <header>
+            <a href="">
+                <div className="logo">VASS</div>
+            </a>
+            <ul className="menu">
+                <li>
+                    <a href="">홍길동</a>
+                </li>
+                <li>
+                    <a href="">logout</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <aside>
+                <div className="aside-toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18">
+                        <path d="M2 13.5h14V12H2v1.5zm0-4h14V8H2v1.5zM2 4v1.5h14V4H2z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path d="M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z"/>
+                    </svg>
+                </div>
+                <div className="aside-icon-menu">
+                    <a href="index.html" className="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M10 20h4V4h-4v16zm-6 0h4v-8H4v8zM16 9v11h4V9h-4z"/>
+                        </svg>
+                    </a>
+                    <a href="operationalDefinition_list.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M16 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM2 12c0-2.79 1.64-5.2 4.01-6.32V3.52C2.52 4.76 0 8.09 0 12s2.52 7.24 6.01 8.48v-2.16C3.64 17.2 2 14.79 2 12zm13-9c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div className="aside-menu">
+                    <h3 className="aside-title">결과대시보드</h3>
+                    <ul>
+                        <li><a href="">summary</a></li>
+                        <li>
+                            <span className="sub-menu active">접종률</span>
+                            <ul>
+                                <li><a href="index.html" className="active">생년월 코호트별 접종률</a></li>
+                                <li><a href="chart_02.html">연령군별 접종률</a></li>
+                                <li><a href="chart_04.html">지역별 접종률</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="chart_05.html">안전성</a></li>
+                    </ul>
+                    <h3 className="aside-title">조작적 정의</h3>
+                    <ul>
+                        <li><a href="operationalDefinition_list.html">목록리스트</a></li>
+                        <li><a href="operationalDefinition_add.html">조작적정의 생성</a></li>
+                    </ul>
+                    <h3 className="aside-title">연구디자인</h3>
+                    <ul>
+                        <li><a href="">연구디자인 리스트</a></li>
+                        <li><a href="">연구디자인 생성</a></li>
+                    </ul>
+                    <h3 className="aside-title">관리자</h3>
+                    <ul>
+                        <li><a href="">조작적 추출관리</a></li>
+                        <li><a href="">연구설계 추출관리</a></li>
+                        <li><a href="">결과대시보드 관리</a></li>
+                        <li><a href="user_list.html">유저 관리</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div className="content">
+                <div className="content-title">
+                    <h1>백신 접종률</h1>
+                    <ul className="tabs">
+                        <li><a className="active" href="index.html">생년월 코호트별 접종률</a></li>
+                        <li><a href="chart_02.html">연령군별 접종률</a></li>
+                        <li><a href="chart_03.html">완전접종률</a></li>
+                        <li><a href="chart_04.html">지역별 접종률</a></li>
+                    </ul>
+                </div>
+                <div className="content-view">
+                    <div className="search">
+                        <section className="filter filter-vaccine-type">
+                            <h3>vaccine type</h3>
+                            <ul>
+                                <li>
+                                    <input id="vaccine-01" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-01">CG</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-02" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-02">B형간염</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-03" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-03">DTaP</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-04" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-04">폴리오(IPV)</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-05" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-05">DTaP-IPV</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-06" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-06">DTaP-IPV/Hib</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-07" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-07">Td</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-08" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-08">Tdap</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-09" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-09">MMR</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-10" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-10">일본뇌염</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-11" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-11">수두</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-12" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-12">Hib</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-13" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-13">A형간염</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-14" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-14">폐렴구균</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-15" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-15">HPV</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-16" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-16">장티푸스</label>
+                                </li>
+                                <li>
+                                    <input id="vaccine-17" type="radio" name="select-vaccine-type" />
+                                    <label htmlFor="vaccine-17">신증후군출혈열</label>
+                                </li>
+                            </ul>
+                        </section>
+                        <div className="filters">
+                            <section className="filter filter-inculation-order">
+                                <h3>접종차수</h3>
+                                <ul>
+                                    <li>
+                                        <input id="inculation-01" type="radio" name="select-inculation-order" />
+                                        <label htmlFor="inculation-01">1</label>
+                                    </li>
+                                    <li>
+                                        <input id="inculation-02" type="radio" name="select-inculation-order" />
+                                        <label htmlFor="inculation-02">2</label>
+                                    </li>
+                                    <li>
+                                        <input id="inculation-03" type="radio" name="select-inculation-order" />
+                                        <label htmlFor="inculation-03">3</label>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="filter filter-period">
+                                <h3>기간</h3>
+                                <div className="input-container">
+                                    <input type="text" id="birth_01" />
+                                    <span>~</span>
+                                    <input type="text" id="birth_02" />
+                                </div>
+                            </section>
+                        </div>
+                        <button className="submit-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="result-view">
+                        <div className="chart-container">
+                            <div id="linechart_material" className="chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
   );
 }
