@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: false
+  basePath: "/dashboard-react",
+  assetPrefix: "/dashboard-react",
+  trailingSlash: true,
+  reactStrictMode: false,
 };
 
 export default nextConfig;
