@@ -1,5 +1,3 @@
-import "/styles/base.scss";
-
 export default function RootLayout({
   children,
 }: Readonly<{

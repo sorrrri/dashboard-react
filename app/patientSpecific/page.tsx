@@ -1,7 +1,7 @@
 import React from "react";
 import SubHeader from "../../components/SubHeader";
 
-const dashboardPage = () => {
+const PatientSpecificPage = () => {
   return (
     <div className="container">
       <SubHeader />
@@ -147,4 +147,4 @@ const dashboardPage = () => {
   );
 };
 
-export default dashboardPage;
+export default PatientSpecificPage;

@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Header from "../components/Header";
+import "/styles/main.scss";
 
-export default function Home() {
+const MainPage = () => {
   return (
     <div className="container">
       <Header />
@@ -68,6 +70,89 @@ export default function Home() {
           </ul>
         </div>
       </div>
+      <style>{`
+        body {
+          background: -webkit-gradient(linear, left top, left bottom, from(#2869bd), to(#083b7d));
+          background: linear-gradient(#2869bd, #083b7d);
+          height: 100vh;
+          margin: 0;
+          font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+          font-family: "Comfortaa", cursive;
+          font-weight: 300;
+          overflow: hidden;
+          color: white;
+          text-align: center;
+
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+
+          h1 {
+            opacity: 0;
+            font-size: 3rem;
+            margin-bottom: 1em;
+            animation: fadeInDown 0.6s forwards 0.3s;
+          }
+
+          p {
+            font-family: "NanumSquare", sans-serif;
+            opacity: 0;
+            font-size: 18px;
+            padding: 0;
+            line-height: 1.5;
+            animation: fadeInUp 0.6s forwards 0.6s;
+          }
+
+          header {
+            padding: 1rem;
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+          }
+
+          small {
+            font-family: "Comfortaa", cursive;
+            line-height: 1.2;
+            font-size: 14px;
+          }
+
+          header ul {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+
+          header .language {
+            display: flex;
+          }
+
+          header .language small {
+            color: #8396af;
+            background-color: transparent;
+            padding: 0.5rem;
+            position: relative;
+            line-height: 1;
+          }
+
+          header .language small:first-of-type::before {
+            content: "";
+            display: block;
+            border-right: 1px solid #839ab7;
+            height: 9px;
+            width: 1px;
+            position: absolute;
+            right: 0;
+          }
+
+          header .language small.active {
+            color: white;
+          }
+        }
+      `}</style>
     </div>
   );
-}
+};
+
+export default MainPage;

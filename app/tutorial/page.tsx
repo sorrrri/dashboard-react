@@ -1,7 +1,7 @@
 import React from "react";
 import SubHeader from "../../components/SubHeader";
 
-const StandardECGPage = () => {
+const TutorialPage = () => {
   return (
     <div className="container">
       <SubHeader />
@@ -79,4 +79,4 @@ const StandardECGPage = () => {
   );
 };
 
-export default StandardECGPage;
+export default TutorialPage;
