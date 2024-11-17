@@ -1,13 +1,15 @@
 @font-face {
-  font-family: 'Comfortaa';
-  src: url('/fonts/Comfortaa-SemiBold.ttf');
+  font-family: "Comfortaa";
+  src: url("https://sorrrri.github.io/dashboard-react/fonts/Comfortaa-SemiBold.ttf");
 }
 
 @font-face {
-  font-family: 'NanumSquare';
+  font-family: "NanumSquare";
   font-weight: 300;
-  src: url('/fonts/NanumSquareL.eot');
-  src: url('/fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'), url('/fonts/NanumSquareL.woff') format('woff'), url('/fonts/NanumSquareL.ttf') format('truetype')
+  src: url("https://sorrrri.github.io/dashboard-react/fonts/NanumSquareL.eot");
+  src: url("https://sorrrri.github.io/dashboard-react/fonts/NanumSquareL.eot?#iefix") format("embedded-opentype"),
+    url("https://sorrrri.github.io/dashboard-react/fonts/NanumSquareL.woff") format("woff"),
+    url("https://sorrrri.github.io/dashboard-react/fonts/NanumSquareL.ttf") format("truetype");
 }
 
 body {
@@ -33,7 +35,7 @@ h1 {
   opacity: 0;
   font-size: 3rem;
   margin-bottom: 1em;
-  animation: fadeInDown .6s forwards .3s;
+  animation: fadeInDown 0.6s forwards 0.3s;
 }
 
 p {
@@ -42,7 +44,7 @@ p {
   font-size: 18px;
   padding: 0;
   line-height: 1.5;
-  animation: fadeInUp .6s forwards .6s;
+  animation: fadeInUp 0.6s forwards 0.6s;
 }
 
 header {
@@ -71,20 +73,19 @@ header .language {
 header .language small {
   color: #8396af;
   background-color: transparent;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
   line-height: 1;
 }
 
 header .language small:first-of-type::before {
-  content: '';
+  content: "";
   display: block;
   border-right: 1px solid #839ab7;
   height: 9px;
   width: 1px;
   position: absolute;
   right: 0;
-
 }
 
 header .language small.active {
@@ -99,7 +100,6 @@ header .language small.active {
 
 .content {
   flex: 1 1 auto;
-
 }
 
 .main {
@@ -117,7 +117,8 @@ header .language small.active {
   justify-content: space-around;
 }
 
-.main:before, .main:after {
+.main:before,
+.main:after {
   content: "";
   display: block;
   position: absolute;
@@ -158,7 +159,8 @@ header .language small.active {
   min-width: 800px;
 }
 
-.main__text-wrapper:before, .main__text-wrapper:after {
+.main__text-wrapper:before,
+.main__text-wrapper:after {
   content: "";
   display: block;
   position: absolute;
@@ -254,19 +256,18 @@ header .language small.active {
   font-size: 20px;
   padding: 1.5rem 4rem;
   border: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: white;
   color: #2869bd;
-  animation: fadeIn .4s forwards 1s;
+  animation: fadeIn 0.4s forwards 1s;
 }
-
 
 .partners {
   display: flex;
   align-items: center;
 }
 
-.partners li[class*='logo-'] {
+.partners li[class*="logo-"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -277,13 +278,13 @@ header .language small.active {
 li.logo-mfds {
   opacity: 0;
   background-image: url("/images/logo/mfds_wh.png");
-  animation: fadeInUpPartners .8s forwards 1.2s;
+  animation: fadeInUpPartners 0.8s forwards 1.2s;
 }
 
 li.logo-kit {
   opacity: 0;
   background-image: url("/images/logo/kit_wh.png");
-  animation: fadeInUpPartners .8s forwards 1.4s;
+  animation: fadeInUpPartners 0.8s forwards 1.4s;
 }
 
 li.logo-cmi {
@@ -291,13 +292,13 @@ li.logo-cmi {
   background-image: url("/images/logo/cmi_wh.png");
   width: 100px !important;
   background-size: 64% !important;
-  animation: fadeInUpPartners .8s forwards 1.6s;
+  animation: fadeInUpPartners 0.8s forwards 1.6s;
 }
 
 .partners li svg {
   opacity: 0;
   fill: white;
-  animation: fadeInUpPartners .8s forwards 1.8s;
+  animation: fadeInUpPartners 0.8s forwards 1.8s;
 }
 
 .progress-wrap {
@@ -306,58 +307,58 @@ li.logo-cmi {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInDown {
   0% {
-      opacity: 0;
-      transform: translateY(-30px);
+    opacity: 0;
+    transform: translateY(-30px);
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInUpPartners {
   0% {
-      opacity: 0;
-      transform: translateY(10px);
+    opacity: 0;
+    transform: translateY(10px);
   }
   100% {
-      opacity: .7
+    opacity: 0.7;
   }
 }
 
 @-webkit-keyframes draw {
   from {
-      stroke-dashoffset: 1000;
+    stroke-dashoffset: 1000;
   }
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
 @keyframes draw {
   from {
-      stroke-dashoffset: 1000;
+    stroke-dashoffset: 1000;
   }
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -393,156 +394,156 @@ li.logo-cmi {
 
 @-webkit-keyframes bounce-1 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(50px);
-      transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes bounce-1 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(50px);
-      transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes bounce-2 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(-30px);
-      transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes bounce-2 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(-30px);
-      transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes bounce-3 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(30px);
-      transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes bounce-3 {
   0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      -webkit-transform: translateY(30px);
-      transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes rotation {
   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotation {
   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes gradient-fade {
   from {
-      -webkit-transform: translate(10%, -10%) rotate(0deg);
-      transform: translate(10%, -10%) rotate(0deg);
+    -webkit-transform: translate(10%, -10%) rotate(0deg);
+    transform: translate(10%, -10%) rotate(0deg);
   }
   to {
-      -webkit-transform: translate(50%, -50%) rotate(360deg);
-      transform: translate(50%, -50%) rotate(360deg);
+    -webkit-transform: translate(50%, -50%) rotate(360deg);
+    transform: translate(50%, -50%) rotate(360deg);
   }
 }
 
 @keyframes gradient-fade {
   from {
-      -webkit-transform: translate(10%, -10%) rotate(0deg);
-      transform: translate(10%, -10%) rotate(0deg);
+    -webkit-transform: translate(10%, -10%) rotate(0deg);
+    transform: translate(10%, -10%) rotate(0deg);
   }
   to {
-      -webkit-transform: translate(50%, -50%) rotate(360deg);
-      transform: translate(50%, -50%) rotate(360deg);
+    -webkit-transform: translate(50%, -50%) rotate(360deg);
+    transform: translate(50%, -50%) rotate(360deg);
   }
 }
 
 @-webkit-keyframes gradient-fade-alt {
   from {
-      -webkit-transform: translate(-20%, 20%) rotate(0deg);
-      transform: translate(-20%, 20%) rotate(0deg);
+    -webkit-transform: translate(-20%, 20%) rotate(0deg);
+    transform: translate(-20%, 20%) rotate(0deg);
   }
   to {
-      -webkit-transform: translate(-60%, 60%) rotate(360deg);
-      transform: translate(-60%, 60%) rotate(360deg);
+    -webkit-transform: translate(-60%, 60%) rotate(360deg);
+    transform: translate(-60%, 60%) rotate(360deg);
   }
 }
 
 @keyframes gradient-fade-alt {
   from {
-      -webkit-transform: translate(-20%, 20%) rotate(0deg);
-      transform: translate(-20%, 20%) rotate(0deg);
+    -webkit-transform: translate(-20%, 20%) rotate(0deg);
+    transform: translate(-20%, 20%) rotate(0deg);
   }
   to {
-      -webkit-transform: translate(-60%, 60%) rotate(360deg);
-      transform: translate(-60%, 60%) rotate(360deg);
+    -webkit-transform: translate(-60%, 60%) rotate(360deg);
+    transform: translate(-60%, 60%) rotate(360deg);
   }
 }
