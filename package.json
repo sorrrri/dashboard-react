@@ -12,8 +12,7 @@
   "dependencies": {
     "dashboard": "file:",
     "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react": "^18.3.1",
     "react-google-charts": "^5.2.1",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3"
