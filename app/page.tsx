@@ -1,21 +1,11 @@
-import "/styles/main.scss";
+import React from "react";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <div className="container">
-      <header>
-        <ul>
-          <li className="language">
-            <small className="lang lang-en" data-lang-type="en">
-              EN
-            </small>
-            <small className="lang lang-kr" data-lang-type="ko">
-              KR
-            </small>
-          </li>
-        </ul>
-      </header>
+      <Header />
       <div className="content">
         <div className="arrow arrow--top">
           <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">

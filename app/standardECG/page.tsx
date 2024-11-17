@@ -1,33 +1,10 @@
 import React from "react";
-import Link from 'next/link';
-import '/styles/style.scss';
+import SubHeader from "../../components/SubHeader";
 
 const StandardECGPage = () => {
   return (
     <div className="container">
-      <header>
-        <div className="logo"><Link href="/">DQTS</Link></div>
-        <ul>
-          <li className="language">
-            <small className="lang lang-en" data-lang-type="en">EN</small>
-            <small className="lang lang-kr" data-lang-type="ko">KR</small>
-          </li>
-          <li className="dark-light">
-            <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"
-              strokeLinejoin="round">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-            </svg>
-          </li>
-        </ul>
-      </header>
-      <ul className="navigation">
-        <li><Link href="/dashboard">Dashboard</Link></li>
-        <li><Link href="/tutorial">Tutorial</Link></li>
-        <li className="active"><Link href="/standardECG">Standard 12-lead ECG</Link></li>
-        <li><Link href="/icuECG">ICU continuous ECG</Link></li>
-        <li><Link href="/patientSpecific">Patient specific</Link></li>
-        <li><Link href="/preclinical">Preclinical risk evaluation</Link></li>
-      </ul>
+      <SubHeader />
       <div className="content standard_ecg">
         <div className="wrapper">
           <div className="title">
@@ -39,8 +16,7 @@ const StandardECGPage = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
               </svg>
-              <input type="search" placeholder="Search Drug name you want to know. ATC code, Drug Name ..."
-                id="standard_ecg_search_val" />
+              <input type="search" placeholder="Search Drug name you want to know. ATC code, Drug Name ..." id="standard_ecg_search_val" />
             </div>
           </div>
           <div className="table">
@@ -158,7 +134,7 @@ const StandardECGPage = () => {
           <div className="pagination">
             <ul>
               <li>
-                <svg style={{transform: 'rotate(180deg)'}} xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                <svg style={{ transform: "rotate(180deg)" }} xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
                   <path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z" />
                 </svg>
               </li>

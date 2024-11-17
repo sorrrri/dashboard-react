@@ -1,33 +1,10 @@
 import React from "react";
-import Link from 'next/link';
-import '/styles/style.scss';
+import SubHeader from "../../components/SubHeader";
 
 const dashboardPage = () => {
   return (
     <div className="container">
-      <header>
-        <div className="logo"><Link href="/">DQTS</Link></div>
-        <ul>
-          <li className="language">
-            <small className="lang lang-en" data-lang-type="en">EN</small>
-            <small className="lang lang-kr" data-lang-type="ko">KR</small>
-          </li>
-          <li className="dark-light">
-            <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"
-              strokeLinejoin="round">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-            </svg>
-          </li>
-        </ul>
-      </header>
-      <ul className="navigation">
-        <li><Link href="/dashboard">Dashboard</Link></li>
-        <li><Link href="/tutorial">Tutorial</Link></li>
-        <li><Link href="/standardECG">Standard 12-lead ECG</Link></li>
-        <li><Link href="/icuECG">ICU continuous ECG</Link></li>
-        <li><Link href="/patientSpecific">Patient specific</Link></li>
-        <li className="active"><Link href="/preclinical">Preclinical risk evaluation</Link></li>
-      </ul>
+      <SubHeader />
       <div className="content preclinical">
         <div className="wrapper">
           <div className="title">
@@ -39,17 +16,15 @@ const dashboardPage = () => {
           </div>
           <section className="tutorial">
             <div className="title">
-              <p>We use data from drugs that are suspected of causing QT prolongation in hospitals and those
-                that do not. Inhibition of calcium, potassium, and sodium channels of these drugs was
-                measured in vitro. Based on the measured values, we learn the effects of inhibition of each
-                channel on QT prolongation in several machine learning models. The machine learning model
-                used on this page is currently pilot tested.
+              <p>
+                We use data from drugs that are suspected of causing QT prolongation in hospitals and those that do not. Inhibition of calcium, potassium, and sodium channels of
+                these drugs was measured in vitro. Based on the measured values, we learn the effects of inhibition of each channel on QT prolongation in several machine learning
+                models. The machine learning model used on this page is currently pilot tested.
               </p>
-              <p>The appropriate concentration of the drug used in the channel inhibition experiment is based
-                on the prescription of the drug currently being used in the hospital, and further
-                experiments are conducted at concentrations corresponding to 0.1 times and 10 times. Before
-                calculating the risk of QT prolongation for a specific drug, we recommend that you first
-                contact the Korea Institute of Toxicology for the appropriate concentration of the drug.
+              <p>
+                The appropriate concentration of the drug used in the channel inhibition experiment is based on the prescription of the drug currently being used in the hospital,
+                and further experiments are conducted at concentrations corresponding to 0.1 times and 10 times. Before calculating the risk of QT prolongation for a specific drug,
+                we recommend that you first contact the Korea Institute of Toxicology for the appropriate concentration of the drug.
               </p>
             </div>
             <ul>
@@ -106,7 +81,9 @@ const dashboardPage = () => {
                 </div>
               </div>
               <div className="result">
-                <button className="btn-result show" type="submit">get result</button>
+                <button className="btn-result show" type="submit">
+                  get result
+                </button>
                 <ul>
                   <li>No QT prolongation</li>
                   <li className="refresh">
